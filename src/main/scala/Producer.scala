@@ -5,7 +5,7 @@ import org.apache.kafka.common.serialization.StringSerializer
 
 import scala.io.Source
 
-object producer1 extends App{
+object Producer extends App{
 
 
   val props: Properties = new Properties()
