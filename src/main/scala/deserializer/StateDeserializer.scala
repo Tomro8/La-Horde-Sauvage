@@ -1,5 +1,5 @@
 
-package src.main.scala.deserializer
+package deserializer
 
 class StateDeserializer extends Deserializer[State] {
   override def configure(map: util.Map[String, _], b: Boolean): Unit = {

@@ -2,31 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39c12ad7-eae2-4545-ba30-a2efde6ff221" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Projet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Projet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/deserializer/PerformDeserializer.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/deserializer/StateDeserializer.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Drone.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Perform.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/State.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Producer.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/serializer/PerformSerializer.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/serializer/StateSerializer.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/projet$sources/0.1/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/projet$sources/0.1/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/projet$sources/0.1/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/projet$sources/0.1/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-projet$sources-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/deserializer/PerformDeserializer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/deserializer/PerformDeserializer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/deserializer/StateDeserializer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/deserializer/StateDeserializer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/model/Drone.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/model/Drone.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/model/Perform.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/model/Perform.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/model/State.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/model/State.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/producer/PerformKafkaProducer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/producer/PerformKafkaProducer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/producer/Producer.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/producer/StateKafkaProducer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/producer/StateKafkaProducer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/serializer/PerformSerializer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/serializer/PerformSerializer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/serializer/StateSerializer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/serializer/StateSerializer.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,11 +36,64 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/producer/StateKafkaProducer.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+            <state relative-caret-position="90">
+              <caret line="6" column="21" lean-forward="true" selection-end-line="33" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/producer/PerformKafkaProducer.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
               <folding>
-                <element signature="e#34#61#0" expanded="true" />
+                <element signature="e#20#47#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/serializer/StateSerializer.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+              <folding>
+                <element signature="e#21#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/main.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="52" lean-forward="true" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.sbt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/deserializer/PerformDeserializer.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -60,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/model/Drone.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="60">
+              <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -78,46 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/model/State.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/sbt.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/modules/Projet.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="8" selection-start-column="8" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/modules/Projet-build.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/main.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="195">
+              <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -135,9 +138,11 @@
     <findStrings>
       <find>user</find>
       <find>private</find>
+      <find>Perfom</find>
     </findStrings>
     <replaceStrings>
       <replace>state</replace>
+      <replace>Perform</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -146,19 +151,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/model/Drone.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Drone.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Producer.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/myProducer.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/StateKafkaProducer.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/main.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/producer/StateKafkaProducer.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/model/Drone.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/model/Perform.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/model/test.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/main.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/model/State.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/model/Drone.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/producer/StateKafkaProducer.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/producer/PerformKafkaProducer.scala" />
+        <option value="$PROJECT_DIR$/build.sbt" />
+        <option value="$PROJECT_DIR$/src/main/scala/serializer/StateSerializer.scala" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1" />
@@ -251,6 +265,12 @@
               <item name="Projet" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Projet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="scala-2.12" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -262,9 +282,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -332,15 +353,16 @@
       <workItem from="1553973814677" duration="2144000" />
       <workItem from="1553976560500" duration="1351000" />
       <workItem from="1553978021847" duration="1065000" />
-      <workItem from="1553979180192" duration="901000" />
+      <workItem from="1553979180192" duration="3556000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6668000" />
+    <option name="totallyTimeSpent" value="9323000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1842" height="981" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26588628" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -361,12 +383,12 @@
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="13" visible="true" weight="0.16549295" />
-      <window_info active="true" anchor="bottom" id="Messages" order="14" visible="true" weight="0.3298122" />
+      <window_info anchor="bottom" id="Messages" order="14" visible="true" weight="0.3298122" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32998884" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="sbt" order="6" />
       <window_info anchor="right" id="Database" order="7" />
@@ -378,61 +400,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/scala/Drone.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/model/Drone.scala" />
-    <entry file="file://$PROJECT_DIR$/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Producer.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/StateKafkaProducer.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/model/Drone.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/model/Perform.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/model/State.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/sbt.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/producer/StateKafkaProducer.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-          <folding>
-            <element signature="e#34#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/modules/Projet.iml">
       <provider selected="true" editor-type-id="text-editor">
@@ -443,6 +417,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/modules/Projet-build.iml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/model/test.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/model/Perform.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/model/Drone.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/model/State.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="52" lean-forward="true" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/producer/StateKafkaProducer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="21" lean-forward="true" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/producer/Producer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/producer/PerformKafkaProducer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding>
+            <element signature="e#20#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/deserializer/PerformDeserializer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/serializer/StateSerializer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding>
+            <element signature="e#21#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

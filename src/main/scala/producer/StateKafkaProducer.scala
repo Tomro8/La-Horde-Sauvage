@@ -1,44 +1,34 @@
 
-package src.main.scala.producer
+package producer
 
 import java.util.Properties
-import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
-import src.main.scala.model.State
 
-/*
-object StateKafkaProducer {
-  val props:Properties = new Properties()
-  props.put("bootstrap.servers","192.168.1.100:9092")
-  props.put("key.serializer","org.apache.kafka.common.serialization.StringSerializer")
-  props.put("value.serializer","src.main.scala.serializer.StateSerializer")
-  props.put("acks","all")
-  val producer = new KafkaProducer[String, State](props)
-  try{
-    for(i <- 0 to 100) {
-      val state = new State()
-      val record = new ProducerRecord[String, State]("state_topic",i.toString,state)
-      val metadata = producer.send(record)
-      printf(s"sent record(key=%s value=%s) " +
-        "meta(partition=%d, offset=%d)\n",
-        record.key(), record.value(), metadata.get().partition(),
-        metadata.get().offset());
-    }
-  }catch{
-    case e:Exception => e.printStackTrace()
-  }finally {
-    producer.close()
-  }
-}
-*/
+import model.State
+import org.apache.kafka.clients.producer.{KafkaProducer, ProducerConfig, ProducerRecord}
+import org.apache.kafka.common.serialization.StringSerializer
 
 class StateKafkaProducer() {
-  private var props: Properties
+  private val topic: String = "state_topic"
+  private val props: Properties = new Properties()
+  private val producer: KafkaProducer[String, State] = new KafkaProducer[String, State](props)
 
   def this() {
     this()
+    props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
+    props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, classOf[StringSerializer])
+    props.put("value.serializer","src.main.scala.serializer.StateSerializer")
+    props.put("acks","all")
   }
 
   def produce(state: State) {
+    try {
+      val record = new ProducerRecord[String, State](this.topic, state)
+      producer.send(record)
+    } catch {
+      case e:Exception => e.printStackTrace()
+    } finally {
+      producer.close()
+    }
 
   } 
 }

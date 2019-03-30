@@ -1,5 +1,5 @@
 
-package src.main.scala.deserializer
+package deserializer
 
 class PerformDeserializer extends Deserializer[Perform] {
   override def configure(map: util.Map[String, _], b: Boolean): Unit = {

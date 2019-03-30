@@ -1,11 +1,11 @@
 
-package src.main.scala.model
+package model
 
 class Perform() {
-    var id: Int
-    var killCounter: Int
-    var efficacy: Float
-    var ammo: Int
+    private var id: Int = 0
+    private var killCounter: Int = 0
+    private var efficacy: Float = 0
+    private var ammo: Int = 0
 
     def this(id: Int, killCounter: Int, efficacy: Float, ammo: Int) {
         this()

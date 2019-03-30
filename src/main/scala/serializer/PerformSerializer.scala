@@ -1,5 +1,5 @@
 
-package src.main.scala.serializer
+package serializer
 
 class PerformSerializer extends Serializer[Perform] {
 
