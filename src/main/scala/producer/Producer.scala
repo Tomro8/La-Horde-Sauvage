@@ -2,11 +2,13 @@ import java.util.Properties
 
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerConfig, ProducerRecord, RecordMetadata}
 import org.apache.kafka.common.serialization.StringSerializer
+import src.main.model.Drone
 
 import scala.io.Source
 
-object Producer extends App{
+object Producer extends App {
 
+  val d: Drone = new Drone()
 
   val props: Properties = new Properties()
   props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
