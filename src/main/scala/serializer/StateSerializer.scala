@@ -8,7 +8,7 @@ import model.State
 import org.apache.kafka.common.serialization.Serializer
 
 class StateSerializer extends Serializer[State] {
-  
+
   override def serialize(s: String, t: State): Array[Byte] = {
     if (t == null)
       null

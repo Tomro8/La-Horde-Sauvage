@@ -8,16 +8,17 @@ import org.apache.kafka.clients.producer.{KafkaProducer, ProducerConfig, Produce
 import org.apache.kafka.common.serialization.StringSerializer
 
 class StateKafkaProducer() {
-  private val topic: String = "state_topic"
-  private val props: Properties = new Properties()
-  private val producer: KafkaProducer[String, State] = new KafkaProducer[String, State](props)
+  val topic: String = "state_topic"
+  val props: Properties = new Properties()
+  var producer: KafkaProducer[String, State] = _
 
-  def this() {
-    this()
+  val init: Unit = {
+    print("construction state producer")
     props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
     props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, classOf[StringSerializer])
-    props.put("value.serializer","src.main.scala.serializer.StateSerializer")
+    props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,"serializer.StateSerializer")
     props.put("acks","all")
+    producer = new KafkaProducer[String, State](props)
   }
 
   def produce(state: State) {

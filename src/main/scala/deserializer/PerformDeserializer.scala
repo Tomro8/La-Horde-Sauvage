@@ -1,4 +1,5 @@
 
+/*
 package deserializer
 
 class PerformDeserializer extends Deserializer[Perform] {
@@ -15,3 +16,4 @@ class PerformDeserializer extends Deserializer[Perform] {
       
   }
 }
+*/

@@ -1,4 +1,5 @@
 
+/*
 package deserializer
 
 class StateDeserializer extends Deserializer[State] {
@@ -15,3 +16,4 @@ class StateDeserializer extends Deserializer[State] {
       
   }
 }
+*/
