@@ -10,6 +10,7 @@ class Drone() {
     private var killCounter: Int = 0
     private var efficacy: Float = 0
     private var ammo: Int = 0
+    //todo: ajouter la hauteur dans state
 
     def this(id: Int, speed: Int, longitude: Int, latitude: Int, battery: Int, killCounter: Int, efficacy: Float, ammo: Int) {
         this()
