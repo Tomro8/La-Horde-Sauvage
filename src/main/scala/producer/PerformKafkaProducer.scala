@@ -1,5 +1,4 @@
 
-/*
 package producer
 
 import java.util.Properties
@@ -9,16 +8,16 @@ import org.apache.kafka.clients.producer.{KafkaProducer, ProducerConfig, Produce
 import org.apache.kafka.common.serialization.StringSerializer
 
 class PerformKafkaProducer() {
-  private val topic: String = "perform_topic"
-  private val props: Properties = new Properties()
-  private val producer: KafkaProducer[String, Perform] = new KafkaProducer[String, Perform](props)
+  val topic: String = "perform_topic"
+  val props: Properties = new Properties()
+  var producer: KafkaProducer[String, Perform] = _
 
-  def this() {
-    this()
+  val init: Unit = {
     props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
     props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, classOf[StringSerializer])
-    props.put("value.serializer","src.main.scala.serializer.PerformSerializer")
+    props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,"serializer.PerformSerializer")
     props.put("acks","all")
+    producer = new KafkaProducer[String, Perform](props)
   }
 
   def produce(perform: Perform) {
@@ -33,4 +32,3 @@ class PerformKafkaProducer() {
 
   }
 }
-*/

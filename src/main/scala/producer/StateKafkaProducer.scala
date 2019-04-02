@@ -13,11 +13,10 @@ class StateKafkaProducer() {
   var producer: KafkaProducer[String, State] = _
 
   val init: Unit = {
-    print("construction state producer")
     props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
     props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, classOf[StringSerializer])
-    props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,"serializer.StateSerializer")
-    props.put("acks","all")
+    props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, classOf[serializer.StateSerializer])
+    props.put("acks","all") //Todo : what is that ?
     producer = new KafkaProducer[String, State](props)
   }
 
@@ -25,6 +24,7 @@ class StateKafkaProducer() {
     try {
       val record = new ProducerRecord[String, State](this.topic, state)
       producer.send(record)
+      print("State produced: " + state.toString)
     } catch {
       case e:Exception => e.printStackTrace()
     } finally {
