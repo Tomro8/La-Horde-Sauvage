@@ -1,0 +1,1 @@
+{id='1', killCounter='1233', efficacy='0.7', ammo='90'}

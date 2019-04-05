@@ -28,7 +28,7 @@ class StateKafkaConsumer() {
   print("State consumer created, subscribed on state_topic ")
 
   def consume() {
-    print("Started to consume")
+    print("State consumer started to consume")
     try {
       //For this example, we are not going to consume continuously. Therefore we removed the while() loop
       //while (true) {

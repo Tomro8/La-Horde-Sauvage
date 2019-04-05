@@ -9,6 +9,7 @@ class Perform() {
 
     def this(id: Int, killCounter: Int, efficacy: Float, ammo: Int) {
         this()
+        this.id = id
         this.killCounter = killCounter
         this.efficacy = efficacy
         this.ammo = ammo
