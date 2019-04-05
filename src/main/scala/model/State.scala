@@ -25,7 +25,7 @@ class State() {
 
     override def toString: String = {
         "{" +
-        " id='" + getId + "'" +
+        "id='" + getId + "'" +
         ", speed='" + getSpeed + "'" +
         ", longitude='" + getLongitude + "'" +
         ", latitude='" + getLatitude + "'" +

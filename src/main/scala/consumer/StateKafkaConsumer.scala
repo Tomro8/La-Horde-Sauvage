@@ -8,34 +8,47 @@ import org.apache.kafka.clients.consumer.{ConsumerConfig, KafkaConsumer}
 import org.apache.kafka.common.serialization.StringDeserializer
 
 import scala.collection.JavaConverters._
+import java.io._
 
 class StateKafkaConsumer() {
-  val topics = List("perform_topic")
+  val topics = List("state_topic")
   val props:Properties = new Properties()
+  val writer = new PrintWriter(new File("state_logs.txt"))
 
-  props.put("group.id", "test")
+
   props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"localhost:9092")
   props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, classOf[StringDeserializer])
   props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, classOf[deserializer.StateDeserializer])
-  props.put("enable.auto.commit", "true") //Todo keep ?
-  props.put("auto.commit.interval.ms", "1000") //Todo keep ?
+  props.put(ConsumerConfig.GROUP_ID_CONFIG, "myconsumergrp")
+  //props.put("enable.auto.commit", "true") //Todo keep ?
+  //props.put("auto.commit.interval.ms", "1000") //Todo keep ?
 
   val consumer = new KafkaConsumer[String, State](props)
   consumer.subscribe(topics.asJava)
+  print("State consumer created, subscribed on state_topic ")
 
-  def consume(): Unit = {
+  def consume() {
+    print("Started to consume")
     try {
-      while (true) {
-        val records = consumer.poll(10)
+      //For this example, we are not going to consume continuously. Therefore we removed the while() loop
+      //while (true) {
+        val records = consumer.poll(5000)
         for (record<-records.asScala) {
           println("Offset:" + record.offset() + ", key: " + record.key() + ", value: " + record.value())
+          store(record.value())
         }
-      }
+      //}
     } catch {
       case e:Exception => e.printStackTrace()
     } finally {
+      print("State Consumer Closed")
       consumer.close()
+      writer.close()
     }
+  }
+
+  def store(state: State): Unit = {
+    writer.write(state.toString)
   }
 
 }

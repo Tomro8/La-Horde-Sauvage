@@ -21,7 +21,7 @@ class Perform() {
 
     override def toString: String = {
         "{" +
-        " id='" + getId + "'" +
+        "id='" + getId + "'" +
         ", killCounter='" + getKillCounter + "'" +
         ", efficacy='" + getEfficacy + "'" +
         ", ammo='" + getAmmo + "'" +

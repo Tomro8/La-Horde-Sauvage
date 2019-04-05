@@ -13,14 +13,13 @@ object main {
     val stateProducer: StateKafkaProducer = new StateKafkaProducer()
     stateProducer.produce(state)
 
-    //Consume Kafka topics to get Drone info
+    //Consume Kafka topics to get Drone info and write it into files
     val stateConsumer: StateKafkaConsumer = new StateKafkaConsumer()
+    stateConsumer.consume()
 
     //Consomer les deux topics en boucle l'un après l'autre. Ou alors consommer sur des threads différents ?
+    // ==> on fait comme on le souhaite
 
-    //Ecrire dans deux fichiers différents ?
-
-    //Peut-on lire et écrire en même temps dans les fichiers ?
 
   }
 }
