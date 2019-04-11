@@ -23,7 +23,7 @@ object state_analyser {
     // It represents the connexion to Spark and it is the place where you can configure the common properties
     // like the app name, the master url, memories allocation...
     val conf = new SparkConf()
-      .setAppName("Wordcount")
+      .setAppName("State_Analyser")
       .setMaster("local[*]") // here local mode. And * means you will use as much as you have cores.
 
     val sc = SparkContext.getOrCreate(conf)

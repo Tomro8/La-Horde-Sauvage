@@ -1,6 +1,7 @@
 import consumer.{PerformKafkaConsumer, StateKafkaConsumer}
 import model.{Perform, State}
 import producer.{PerformKafkaProducer, StateKafkaProducer}
+import reader.{state_analyser, perform_analyser}
 
 
 object main {
@@ -19,7 +20,7 @@ object main {
 
     //Consomer les deux topics en boucle l'un après l'autre. Ou alors consommer sur des threads différents ?
     // ==> on fait comme on le souhaite
-*/
+
 
     val perf: Perform = new Perform(1, 1233, 0.7.toFloat, 90)
 
@@ -28,5 +29,12 @@ object main {
 
     val performConsumer: PerformKafkaConsumer = new PerformKafkaConsumer()
     performConsumer.consume()
+
+    */
+    printf("\n\n\n")
+    val wordCounts = state_analyser.wordcount
+    wordCounts.collect().foreach(println)
+    printf("\n\n\n")
+
   }
 }

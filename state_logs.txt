@@ -1,1 +1,2 @@
-{id='6', speed='60', longitude='139', latitude='29', battery='90'}
+{ id="1", speed="200", height="230", longitude="45", latitude="90", battery="45"}
+{ id="2", speed="300", height="280", longitude="40", latitude="100", battery="75"}

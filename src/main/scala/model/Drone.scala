@@ -16,6 +16,7 @@ class Drone() {
         this()
         this.id = id
         this.speed = speed
+        this.height = height
         this.longitude = longitude
         this.latitude = latitude
         this.battery = battery
