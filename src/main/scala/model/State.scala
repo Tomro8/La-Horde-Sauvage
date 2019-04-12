@@ -13,7 +13,7 @@ class State() {
         this()
         this.id = id
         this.speed = speed
-        this.speed = height
+        this.height = height
         this.longitude = longitude
         this.latitude = latitude
         this.battery = battery
