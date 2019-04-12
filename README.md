@@ -52,13 +52,6 @@ We can now start zookeeper server and then create our three brokers based on the
     $ ./bin/kafka-server-start.sh config/server-1.properties &
     $ ./bin/kafka-server-start.sh config/server-2.properties &
 
-You can check that the 3 brokers are effectively running by running the following command:
-
-    $ ./bin/zookeeper-shell.sh localhost:2181 <<< "ls /brokers/ids"
-
-It should display something like this :
-![](docs/broker_list.png)
-
 ##### 3.5. Now as a last step you need to create our 2 topics:
 
     $ ./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 2 --topic state_topic
