@@ -48,7 +48,7 @@ class StateKafkaConsumer() {
   }
 
   def store(state: State): Unit = {
-    writer.write(state.toString)
+    writer.write(state.toString + "\n")
   }
 
 }

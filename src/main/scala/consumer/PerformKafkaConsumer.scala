@@ -48,7 +48,7 @@ class PerformKafkaConsumer() {
   }
 
   def store(perf: Perform): Unit = {
-    writer.write(perf.toString)
+    writer.write(perf.toString + "\n")
   }
 
 }

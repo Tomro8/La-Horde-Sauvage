@@ -28,8 +28,9 @@ class StateKafkaProducer() {
     } catch {
       case e:Exception => e.printStackTrace()
     } finally {
-      producer.close()
+      //producer.close()
     }
+
 
   } 
 }
