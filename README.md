@@ -1,5 +1,8 @@
 
 From : https://github.com/Tomro8/La-Horde-Sauvage
+Team members:
+ - Pasquier Thomas
+ - Lipskier Dan
 
 # 1. Project Description - Kafka Architecture
 Our company is in charge of a fleet - or rather a swarm - of drones patrolling France. Their mission is to detect moskitoes and kill them with the use of an embeded laser.
